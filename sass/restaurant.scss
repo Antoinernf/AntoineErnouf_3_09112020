@@ -1,0 +1,173 @@
+// MODIFICATION DU HEADER // 
+
+.return {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    padding: 30px;
+    font-size: 2em;
+    transition: opacity 1000ms, transform 1000ms, color 1000ms ;
+
+    &:hover {
+        opacity: 0.8;
+        color: #9356dc;
+        transform:scale(1.12);
+        transition: opacity 190ms, transform 190ms, color 190ms ;
+    }
+}
+
+.entete {
+    margin-top: -40px;
+    position: relative;
+    padding: 30px;
+    background-color:  #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px 40px 0px 0px;
+}
+
+
+// IMAGE DE COUVERTURE DE LA PAGE : IMAGE DU RESTAURANT //
+
+.cardImg {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+// TITRE DU RESTAURANT // 
+
+h6 {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.7em;
+}
+
+// EDITION DU MENU //
+
+.menu {
+    padding: 30px;
+    background-color: #f6f6f6;
+    .titreMenu {
+        text-transform: uppercase;
+    }
+}
+
+.containerMenu {
+  display: flex;
+  flex-wrap: wrap;   
+        .item3 {
+            cursor: pointer;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.10);
+            margin: 8px 0px;
+            overflow: hidden;
+        }
+
+}
+
+.ligne {
+    margin: 2px 0px;
+    width: 30px;
+    height: 4px;
+    background-color: #99E2D0;
+}
+
+
+.item3 {
+    transform: translateY(0px);;
+    animation-name: animationItem;
+    animation-duration: 2000ms;
+
+    .content {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .prix {
+        padding: 10px;
+    }
+
+    .repas {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.2em;
+        font-weight: bold; 
+    }
+
+}
+
+// ANIMATION DE CHARGEMENT DU MENU
+
+@keyframes animationItem {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+// ANIMATION DU MENU CHOIX DES PRODUITS //
+
+.valid {
+    width: 80px;
+    height: 90px;
+    background-color: #99E2D0;
+    color: white;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -80px;
+    transition: margin-right 1400ms;
+}
+
+.item3 .valid i{
+    transform: rotate(-180deg);
+    transition: transform 1400ms ease-in-out;
+}
+
+.item3 {
+    &:hover {
+        .valid {
+            margin-right: 0px;
+            transition: margin-right 1400ms;
+        }
+
+        .valid i {
+            transform: rotate(0deg);
+            transition: transform 1400ms ease-in-out;
+        }
+    }
+}
+
+
+// BOUTTON DE COMMANDE //
+
+.boutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+.commander {
+    display: block;
+    margin: 40px 40px 80px 40px ;
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background: linear-gradient(170deg, #ea72da, #a55cdb);
+    font-size: 1em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.10);
+}

@@ -1,0 +1,158 @@
+// MODIFICATION DES PARAMETRES PAR DEFAUTS //
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+    list-style-type:none;
+    color: inherit;
+    text-decoration:none; 
+}
+
+
+/* LOADER */
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; 
+    animation-name: hidden;
+    animation-duration: 6000ms;
+}
+
+.lettre {
+    font-family: "Shrikhand", "Sans serif";
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        color: #ff79da;
+        text-shadow: 0 0 7 px #ff79da;
+    }
+
+    90% {
+        color: #9356dc;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #ff79da;
+        text-shadow: 0 0 7px #ff79da;
+    }
+}
+
+@keyframes hidden {
+        from {
+           z-index: 1; 
+        }
+
+        to {
+            z-index: -1;
+        }
+    }
+
+
+// EDITION DE LA PARTIE TEXTE DU TEXTE //
+
+p {
+    font-family: "Roboto" ;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "Roboto" ;
+
+}
+
+// EDITION DU LOGO DU SITE AU HEADER //
+
+header {
+    align-items: center;
+    justify-content: center;
+}
+
+img.logo {
+    display: block;
+    margin: auto;
+    padding: 30px;
+    cursor: pointer;
+    }
+
+// PERSONNALISATION DES BOUTTONS //
+
+button {
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0px auto;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background: linear-gradient(170deg, #ea72da, #a55cdb);
+    font-size: 1em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.10);
+    transition: opacity 1000ms, transform 1000ms ;
+
+        &:hover {
+            opacity: 0.8;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08), 0 6px 12px rgba(0,0,0,0.10);
+            transition: opacity 600ms;
+            transform:scale(1.02);
+            transition: opacity 190ms, transform 190ms ;
+        }
+}
+
+// ICONE DE COEUR // 
+
+.fa-heart {
+    cursor: pointer;
+    margin-top: 3px;
+    font-size: 2em;
+    transition: transform 1000ms, color 1000ms ;
+
+    &:hover {
+        color: #9356dc;
+        transform:scale(1.12);
+        transition: transform 190ms, color 190ms ;        
+        font-weight: 900;
+        background: linear-gradient(0deg, rgba(147, 86, 220, 1) 40%, rgba(153, 226, 208, 1) 100%);
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         background-clip: text;
+         -webkit-text-fill-color:transparent;
+    }
+
+}
+
+
+// PIED DE PAGE DU SITE // 
+
+footer {
+    color: white;
+    background-color: #353535;
+    padding: 30px;
+    li {
+        cursor: pointer;
+        display: flex;
+        padding: 5px;
+    }
+    i {
+        padding-right: 10px;
+    }
+    img {
+        width: 120px;
+    }
+}
