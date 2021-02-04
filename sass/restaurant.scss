@@ -11,7 +11,7 @@
 
     &:hover {
         opacity: 0.8;
-        color: #9356dc;
+        color: $primaire;
         transform:scale(1.12);
         transition: opacity 190ms, transform 190ms, color 190ms ;
     }
@@ -21,7 +21,7 @@
     margin-top: -40px;
     position: relative;
     padding: 30px;
-    background-color:  #f6f6f6;
+    background-color: $grisClair;
     display: flex;
     justify-content: space-between;
     border-radius: 40px 40px 0px 0px;
@@ -47,7 +47,7 @@ h6 {
 
 .menu {
     padding: 30px;
-    background-color: #f6f6f6;
+    background-color: $grisClair;
     .titreMenu {
         text-transform: uppercase;
     }
@@ -63,7 +63,7 @@ h6 {
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            background-color: white;
+            background-color: $themeclair;
             box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.10);
             margin: 8px 0px;
             overflow: hidden;
@@ -75,7 +75,7 @@ h6 {
     margin: 2px 0px;
     width: 30px;
     height: 4px;
-    background-color: #99E2D0;
+    background-color: $tertiaire;
 }
 
 
@@ -121,8 +121,8 @@ h6 {
 .valid {
     width: 80px;
     height: 90px;
-    background-color: #99E2D0;
-    color: white;
+    background-color: $tertiaire;
+    color: $themeclair;
     font-size: 1.6em;
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f6f6f6;
+    background-color: $grisClair;
 }
 
 .commander {
@@ -166,8 +166,8 @@ h6 {
     padding: 15px 50px;
     border-radius: 50px;
     border: none;
-    color: white;
-    background: linear-gradient(170deg, #ea72da, #a55cdb);
+    color: $themeclair;
+    background: linear-gradient(170deg, $secondaire,$primaire);
     font-size: 1em;
     box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.10);
 }

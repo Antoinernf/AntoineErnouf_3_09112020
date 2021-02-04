@@ -13,6 +13,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-decoration:none; 
 }
 
+/* VARIABLE DE COULEURS */
+
+$grisFonce: #353535;
+$grisClair: #f5f5f5;
+$grisClair2: #e9e9e9;
+
+$primaire: #9356dc;
+$primairePale: #fce2ff;
+
+$secondaire: #ea72da;
+$secondairePale: #fce2ff;
+
+$tertiaire: #99E2D0;
+
+$themeclair: white;
+$noir: black;
 
 /* LOADER */
 
@@ -20,7 +36,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;
     width: 100%;
     height: 100%;
-    background: white;
+    background: $themeclair;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +47,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .lettre {
     font-family: "Shrikhand", "Sans serif";
-    color: black;
+    color: $noir;
     font-size: 3rem;
     margin-bottom: 150px;
     animation: flash 1.2s linear infinite;
@@ -39,18 +55,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 @keyframes flash {
     0% {
-        color: #ff79da;
-        text-shadow: 0 0 7 px #ff79da;
+        color: $secondaire;
+        text-shadow: 0 0 7 px $secondaire;
     }
 
     90% {
-        color: #9356dc;
+        color: $primaire;
         text-shadow: none;
     }
 
     100% {
-        color: #ff79da;
-        text-shadow: 0 0 7px #ff79da;
+        color: $secondaire;
+        text-shadow: 0 0 7px $secondaire;
     }
 }
 
@@ -100,8 +116,8 @@ button {
     padding: 15px;
     border-radius: 50px;
     border: none;
-    color: white;
-    background: linear-gradient(170deg, #ea72da, #a55cdb);
+    color: $themeclair;
+    background: linear-gradient(170deg, $secondaire, $primaire);
     font-size: 1em;
     box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.10);
     transition: opacity 1000ms, transform 1000ms ;
@@ -124,25 +140,24 @@ button {
     transition: transform 1000ms, color 1000ms ;
 
     &:hover {
-        color: #9356dc;
+        color: $primaire;
         transform:scale(1.12);
         transition: transform 190ms, color 190ms ;        
         font-weight: 900;
-        background: linear-gradient(0deg, rgba(147, 86, 220, 1) 40%, rgba(153, 226, 208, 1) 100%);
+        background: linear-gradient(0deg, $primaire 40%, $tertiaire 100%);
          -webkit-background-clip: text;
          -moz-background-clip: text;
          background-clip: text;
          -webkit-text-fill-color:transparent;
     }
-
 }
 
 
 // PIED DE PAGE DU SITE // 
 
 footer {
-    color: white;
-    background-color: #353535;
+    color: $themeclair;
+    background-color: $grisFonce;
     padding: 30px;
     li {
         cursor: pointer;
@@ -154,5 +169,6 @@ footer {
     }
     img {
         width: 120px;
+        margin-bottom: 20px;
     }
 }
