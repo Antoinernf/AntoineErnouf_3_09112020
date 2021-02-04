@@ -36,11 +36,11 @@ $noir: black;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: $themeclair;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1; 
+    z-index: -10; 
     animation-name: hidden;
     animation-duration: 6000ms;
 }
@@ -72,11 +72,11 @@ $noir: black;
 
 @keyframes hidden {
         from {
-           z-index: 1; 
+           z-index: 10; 
         }
 
         to {
-            z-index: -1;
+            z-index: -10;
         }
     }
 
