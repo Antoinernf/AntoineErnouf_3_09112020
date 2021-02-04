@@ -145,9 +145,10 @@ button {
         transition: transform 190ms, color 190ms ;        
         font-weight: 900;
         background: linear-gradient(0deg, $primaire 40%, $tertiaire 100%);
-         -webkit-background-clip: text;
-         -moz-background-clip: text;
-         background-clip: text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        
          -webkit-text-fill-color:transparent;
     }
 }
