@@ -94,8 +94,9 @@
             display: flex;
             justify-content: space-between;
 
-            div {
+            .textContent {
                 padding: 10px;
+                margin-left: 5px;
             }
         }
 
