@@ -90,7 +90,11 @@ p {
 h1 {
     font-size: 30px;
     font-family: "Roboto" ;
+}
 
+h2 {
+    font-size: 1.2em;
+    font-weight: bold; 
 }
 
 // EDITION DU LOGO DU SITE AU HEADER //
@@ -132,13 +136,17 @@ button {
 }
 
 // ICONE DE COEUR // 
-
 .fa-heart {
     cursor: pointer;
     margin-top: 3px;
     font-size: 2em;
-    transition: transform 1000ms, color 1000ms ;
+}
 
+// FORMAT WEB // 
+
+@media screen and (min-width: 768px) {
+.fa-heart {
+    transition: transform 1000ms, color 1000ms ;
     &:hover {
         color: $primaire;
         transform:scale(1.12);
@@ -150,6 +158,42 @@ button {
         color: transparent;
          -webkit-text-fill-color:transparent;
     }
+}
+}
+
+// FORMAT MOBILE //
+
+@media screen and (max-width: 767px) {
+
+   
+@keyframes heartmobile {
+    from {
+        transition: transform 1000ms, color 1000ms ;
+        transform:scale(1);
+    }
+
+    to {
+        color: $primaire;
+        transform:scale(1.12);
+        transition: transform 190ms, color 190ms ;        
+        font-weight: 900;
+        background: linear-gradient(0deg, $primaire 40%, $tertiaire 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+         -webkit-text-fill-color:transparent;
+    }
+}
+
+.fa-heart {
+animation-duration: 14s;
+    &:hover {
+        animation-name: heartmobile;
+        animation-duration: 190ms;
+        animation-fill-mode: forwards;
+
+    }
+}
 }
 
 
