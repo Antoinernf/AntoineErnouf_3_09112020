@@ -162,37 +162,14 @@ button {
 }
 
 // ICONE DE COEUR // 
-.fa-heart {
-    cursor: pointer;
-    margin-top: 3px;
-    font-size: 2em;
-}
 
-// FORMAT WEB // 
-
-@media screen and (min-width: 768px) {
 .fa-heart {
-    transition: transform 1000ms, color 1000ms ;
-    &:hover {
-        color: $primaire;
-        transform:scale(1.12);
-        transition: transform 190ms, color 190ms ;        
-        font-weight: 900;
-        background: linear-gradient(0deg, $primaire 40%, $tertiaire 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-         -webkit-text-fill-color:transparent;
+        cursor: pointer;
+        margin-top: 3px;
+        font-size: 2em;
     }
-}
-}
-
-// FORMAT MOBILE //
-
-@media screen and (max-width: 767px) {
-
    
-@keyframes heartmobile {
+@keyframes heart {
     from {
         transition: transform 1000ms, color 1000ms ;
         transform:scale(1);
@@ -211,16 +188,11 @@ button {
     }
 }
 
-.fa-heart {
-animation-duration: 14s;
-    &:hover {
-        animation-name: heartmobile;
+.fa-heart:hover {
+        animation-name: heart;
         animation-duration: 190ms;
         animation-fill-mode: forwards;
-    }
 }
-}
-
 
 // PIED DE PAGE DU SITE // 
 
