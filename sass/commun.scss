@@ -83,19 +83,45 @@ $noir: black;
 
 // EDITION DE LA PARTIE TEXTE DU TEXTE //
 
+@media screen and (min-width: 768px) {
+
+    p {
+        font-family: "Roboto" ;
+    }
+    
+    h1 {
+        font-size: 2em;
+        font-family: "Roboto" ;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+        font-weight: bold; 
+    }
+    
+
+}
+
+
+@media screen and (max-width: 767px) {
+
 p {
+    font-size: 1.01em;
     font-family: "Roboto" ;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 2.2em;
     font-family: "Roboto" ;
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold; 
 }
+
+}
+
 
 // EDITION DU LOGO DU SITE AU HEADER //
 
