@@ -147,21 +147,15 @@
         margin: 10px 10px 10px 400px;
     }
 
-    footer img {
-        width: 100px!important;
-    }
+    
 }
 
 // MOBILE //
 
 @media screen and (max-width: 767px) {
     .item2 {
-    width: 420px;
+    width: 100%;
     
-    }
-
-    .new {
-        margin: 10px 10px 10px 320px;
     }
 }
 
@@ -175,4 +169,8 @@
     h1 {
         padding-bottom: 20px;
     }
+}
+
+.logoFooter {
+    width: 100px!important;
 }
