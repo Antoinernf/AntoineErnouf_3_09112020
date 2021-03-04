@@ -91,6 +91,7 @@
         height: 290px;
         background-color: $themeclair;
         transition: opacity 1000ms;
+        position: relative;
     
             &:hover {
             opacity: 0.8;
@@ -100,9 +101,11 @@
 
             .new {
                 position: absolute;
+                right: 15px;
+                top: 15px;
                 padding: 10px;
                 background-color: $tertiaire;
-                border-radius: 10px;
+                border-radius: 8px;
                 p{
                     opacity: 0.7;
                 }
@@ -133,21 +136,13 @@
     }
 }
 
-
-
 // ADAPTATION MOBILE //
 
 // WEB //
 @media screen and (min-width: 768px) {
     .item2 {
     width: 500px;
-    }
-
-    .new {
-        margin: 10px 10px 10px 400px;
-    }
-
-    
+    }  
 }
 
 // MOBILE //
@@ -155,7 +150,6 @@
 @media screen and (max-width: 767px) {
     .item2 {
     width: 100%;
-    
     }
 }
 
